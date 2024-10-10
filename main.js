@@ -1,7 +1,7 @@
 function startClassification()
 {
   navigator.mediaDevices.getUserMedia({ audio: true});
-    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/bkaDrKcBl/model.json', modelReady);
+    classifier = ml5.soundClassifier('https://teachablemachine.withgoogle.com/models/4sIBeI8Ok/model.json', modelReady);
 }
 
 function modelReady(){
@@ -32,12 +32,12 @@ function gotResults(error, results) {
       img1.src = 'aliens-02.png';
       img2.src = 'aliens-03.png';
       img3.src = 'aliens-04.png';
-    } else if (results[0].label == "Sino") {
+    } else if (results[0].label == "assovio") {
       img.src = 'aliens-01.png';
       img1.src = 'aliens-02.gif';
       img2.src = 'aliens-03.png';
       img3.src = 'aliens-04.png';
-    } else if (results[0].label == "Estalos") {
+    } else if (results[0].label == "estalos dos dedos") {
       img.src = 'aliens-01.png';
       img1.src = 'aliens-02.png';
       img2.src = 'aliens-03.gif';
